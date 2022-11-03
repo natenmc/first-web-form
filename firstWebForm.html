@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> First Web Form </title>
+    <style>
+        .name-info{
+            width: 300px;
+        }
+        .contact-info {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
     <h1> My First Web Form </h1>
@@ -12,22 +20,24 @@
         <fieldset >
             <legend> Name Information: </legend>
             <label for="firstName"> First Name: </label>
-            <input type="text" id="firstName" name="firstName"> <br>
+            <input type="text" class="name-info" required id="firstName" placeholder="Please type your first name" name="firstName"> <br>
             <label for="lastName"> Last Name: </label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" class="name-info" required id="lastName" placeholder="Please type your last name" name="lastName">
             
         </fieldset>
         <fieldset>
             <legend> Contact Information: </legend>
             <label for="email"> Email: </label>
-            <input type="email" name="email" id="email"> <br>
+            <input type="email" class="contact-info" title="Input your email address" name="email" placeholder="Input your email address" id="email"> <br>
             <label for="telephone">Phone:</label>
-            <input type="tel" name="telephone" id="telephone">
+            <input type="tel" class="contact-info" placeholder="Input your mobile number" id="telephone">
         </fieldset>
         <fieldset>
-            <legend>Birthday:</legend>
+            <legend>Date Information:</legend>
             <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" required id="dob"> <br>
+            <label for="today">Today's Date:</label>
+            <input type="date" name="today" id="today">
         </fieldset>
         <fieldset>
         <input type="submit">
